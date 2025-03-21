@@ -1,0 +1,5 @@
+:root {
+	--cnvs-topbar-bg: var(--no-slider-background);
+}
+
+a.site-real-estate { background-image: url(real-estate-icon.png); }
