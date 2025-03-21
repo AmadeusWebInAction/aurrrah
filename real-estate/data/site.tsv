@@ -5,7 +5,7 @@ safeName	aurrrah-real-estate
 footer-message	A conscious network for **property (real estate)** buying / selling / consulting / developing led by the seasoned team of **V Raveendar and Associates**, headquartered in Chennai, <u>Tamil Nadu</u>, India.
 siteMenuName	VRA
 scaffold	sitemap
-sections_no	about-us
+sections	insights
 |locals
 local-url	http://localhost/networks/aurrrah/live/real-estate/
 local-preview-url	http://localhost/networks/aurrrah/real-estate/
