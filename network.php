@@ -24,19 +24,27 @@ function site_before_render() {
 }
 
 function enrichThemeVars($vars, $what) {
+	if ($what == 'footer-widgets') {
+		$vars['footer-message'] = '<h2 class="m-0">' . $vars['footer-name'] . '</h2>' . NEWLINE . $vars['footer-message-plain'];
+		$vars['footer-logo'] = $vars['footer-logo-plain'];
+		return $vars;
+	}
+
 	if (SITENAME == 'real-estate' && variable('node') == 'index')
 		$vars['optional-slider'] = getSnippet('home-slider');
 
-		return $vars;
-}
-
-function setSubTheme($name, $fullWidth = false) {
-	variable('sub-theme', $name);
-	if ($fullWidth)
-		variable('no-content-boxes', true);
+	return $vars;
 }
 
 variables([
+	'email' => 'contact+' . SITENAME . '@aurrrah.com',
+	'phone' => '91-91766-86867',
+	'whatsapp' => '919176686867',
+
+	'dont-show-current-menu' => true,
+	'footer-variation' => '-two-headings',
+	'link-to-site-home' => true,
+
 	'social' => [
 		[ 'type' => 'linkedin', 'url' => 'https://www.linkedin.com/in/raveendar/', 'name' => 'Raveendar' ],
 	],

@@ -5,3 +5,5 @@
 body.theme-canvas .menu-link { padding-top: 10px; padding-bottom: 10px; } /* menu */
 
 a.site-real-estate { background-image: url(real-estate-icon.png); }
+
+.site-widget h4 { margin-bottom: 0; }
